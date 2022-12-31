@@ -35,7 +35,8 @@
 			</div>
 		</div>
 	</div>
-	<MobileMenu isOpen={isMenuOpen} />
+	<MobileMenu isOpen={isMenuOpen} on:onNavigate={() => (isMenuOpen = false)} />
 </nav>
-
-<slot />
+<div class="text-center">
+	<slot />
+</div>
